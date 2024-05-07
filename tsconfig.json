@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "js",
     "target": "es2019",
     "module": "commonjs",
     "strict": true,

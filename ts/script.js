@@ -241,4 +241,3 @@ function delCounter2(cartId) {
     // basket[cartId].counter -1;
     console.log(basket);
 }
-console.log("hello");

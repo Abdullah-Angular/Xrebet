@@ -102,7 +102,7 @@ function addCartItem(cart: number): void {
 	else {
 		basket.push({ ...listrolls[Number(cart - 1)], counter: 1 })
 	}
-	
+
 	//Добавляем элемент в корзину
 	renderBasket()
 	//Изменяем сумма заказа в корзине
@@ -254,11 +254,11 @@ function showBucket(): void {
 	const bodyJs: HTMLElement = document.querySelector("body")!
 
 	//Если 0 элементов то не открвать корзину
-	
+
 	if (quantityItem.innerHTML === "0") {
-		bucketBtn.classList.add("display-none")		
+		bucketBtn.classList.add("display-none")
 	}
-	
+
 	else {
 		bucketBtn.classList.toggle("display-none")
 		bodyJs.classList.toggle("overflow-hidden")
@@ -291,7 +291,6 @@ function delCounter2(cartId: number): void {
 	console.log(basket)
 
 }
-
 console.log("hello")
 
 
