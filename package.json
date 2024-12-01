@@ -1,0 +1,23 @@
+{
+  "name": "gambit",
+  "version": "1.0.0",
+  "description": "descriptiontext",
+  "main": "index.js",
+  "scripts": {
+    "build":"tsc && cp index.html js/",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-Angular/Xrebet.git"
+  },
+  "keywords": [
+    "wood"
+  ],
+  "author": "Abdullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdullah-Angular/Xrebet/issues"
+  },
+  "homepage": "https://github.com/Abdullah-Angular/Xrebet#readme"
+}
