@@ -4,7 +4,7 @@
   "description": "descriptiontext",
   "main": "index.js",
   "scripts": {
-    "build":"tsc && cp index.html js/",
+    "build": "tsc && cpx index.html js/",
     "test": "test"
   },
   "repository": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Abdullah-Angular/Xrebet/issues"
   },
-  "homepage": "https://github.com/Abdullah-Angular/Xrebet#readme"
+  "homepage": "https://github.com/Abdullah-Angular/Xrebet#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "typescript": "^5.7.2"
+  }
 }
