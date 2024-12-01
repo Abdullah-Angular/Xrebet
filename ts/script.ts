@@ -34,18 +34,17 @@ class Cart {
 
 // массив  объекты которого мы добавляем на страницу
 let listrolls = [
-	new Cart(1, "img/rolls/калифорния маки Запеченный.png", "Ролл Калифорния Маки Запеченный", 1375),
-	new Cart(2, "img/rolls/Авокадо-маки Ролл.png", "Авокадо-маки Ролл", 1375),
-	new Cart(3, "img/rolls/Акаи Ролл.png", "Акаи ролл", 397),
-	new Cart(4, "img/rolls/Кагувасэ Ролл.png", "Ролл Кагувасэ", 363),
-	new Cart(5, "img/rolls/Дракон Ролл.png", "Дракон Ролл", 604),
-	new Cart(6, "img/rolls/цезарь эби.png", "Ролл цезарь эби", 364),
-	new Cart(7, "img/rolls/Кани хотто-маки Ролл.png", "Ролл Кани хотто-маки", 472),
-	new Cart(8, "img/rolls/Ойси ролл.png", "Ойси ролл", 399),
-	new Cart(9, "img/rolls/Кани спайси Гункан.png", "Ролл Кани спайси-гункан", 199),
-	new Cart(10, "img/rolls/Ролл Калифорния Хот.png", "Ролл Калифорния Хот", 362),
-	new Cart(11, "img/rolls/Ролл_Итальянский_запеченый_сырный.png", "Ролл Итальянский запеченый сырный", 330),
-	new Cart(12, "img/rolls/Боул с семгой.png", "Боул с семгой", 419),
+	new Cart(1, "img/rolls/iconXrebet.jpg", "Cialis", 8500),
+	new Cart(2, "img/rolls/iconXrebet.jpg", "Clomid", 2500),
+	new Cart(3, "img/rolls/iconXrebet.jpg", "Androxal", 3300),
+	new Cart(4, "img/rolls/iconXrebet.jpg", "Strattera", 2700),
+	new Cart(5, "img/rolls/iconXrebet.jpg", "Minox", 3000),
+	new Cart(6, "img/rolls/iconXrebet.jpg", "Clenbuterol", 3000),
+	new Cart(7, "img/rolls/iconXrebet.jpg", "Semaglutine", 2500),
+	new Cart(8, "img/rolls/iconXrebet.jpg", "Arimidex", 4000),
+	new Cart(9, "img/rolls/iconXrebet.jpg", "Nimfo", 5000),
+	new Cart(10, "img/rolls/iconXrebet.jpg", "Viagra", 3700),
+	new Cart(11, "img/rolls/iconXrebet.jpg", "PT-141", 4400),
 
 ]
 
@@ -54,7 +53,7 @@ listrolls.forEach((cart: Cart, index: number) => {
 	//html код карточки
 	let cartaddeds = `<div id="${cart.id}"  class="cart">
 			<div class="cart__img">
-					<img src="${cart.img}" alt="">
+					<img class="cart__imgsize" src="${cart.img}" alt="">
 			</div>
 			<div  class="cart__title">
 				${cart.title}
@@ -62,9 +61,6 @@ listrolls.forEach((cart: Cart, index: number) => {
 			<div class="cart__price">
 					<div  class="cart__price-number">
 						${cart.price}
-					</div>
-					<div id="${cart.id}" onclick="addCartItem(${cart.id}); showCounter(${cart.id});"  class="cart__price-bucket">
-							В корзину
 					</div>
 					
 					<div class="cart__price-counter display-none">
@@ -78,6 +74,12 @@ listrolls.forEach((cart: Cart, index: number) => {
 			</div>
 		</div>`
 	//добавление карточки на страницу
+	/*
+	<div id="${cart.id}" onclick="addCartItem(${cart.id}); showCounter(${cart.id});"  class="cart__price-bucket">
+							В корзину
+					</div>
+					это корзина карточки
+	*/
 
 	cartMenu.innerHTML += cartaddeds
 
@@ -291,8 +293,6 @@ function delCounter2(cartId: number): void {
 	console.log(basket)
 
 }
-console.log("hello")
-
 
 
 
